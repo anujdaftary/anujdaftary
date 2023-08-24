@@ -10,7 +10,7 @@ public class GameController {
     //GameController will have all the methods that a
     // client needs from the game.
 
-    public void undo() {
+    public void undo(Game game) {
 
     }
 
@@ -26,19 +26,22 @@ public class GameController {
         }
     }
 
-    public Player getWinner() {
+    public Player getWinner(Game game) {
+        return game.getWinner();
+    }
+
+    public void displayBoard(Game game) {
+        //Print the board.
+        game.displayBoard();
+        //Or
+        //game.getBoard().displayBoard();
+    }
+
+    public void executeNextMove(Game game) {
 
     }
 
-    public void displayBoard() {
-
-    }
-
-    public void executeNextMove() {
-
-    }
-
-    public GameStatus getGameStatus() {
-
+    public GameStatus getGameStatus(Game game) {
+        return game.getGameStatus();
     }
 }

@@ -22,6 +22,10 @@ public class Game {
         return new GameBuilder();
     }
 
+    public void displayBoard() {
+        this.board.displayBoard();
+    }
+
     public void setWinner(Player winner) {
         this.winner = winner;
     }
