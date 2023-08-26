@@ -66,9 +66,8 @@ public class TicTacToeMain {
         //Someone has won the game or game is DRAW.
         if (gameController.getGameStatus(game).equals(GameStatus.ENDED)) {
             //Someone has won the game.
+            game.displayBoard();
             System.out.println("Winner is " + gameController.getWinner(game).getName());
-        } else {
-            System.out.println("Game DRAW.");
         }
     }
 }

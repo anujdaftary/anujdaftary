@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Board {
     private List<List<Cell>> board;
-
     public Board(int dimension) {
         this.board = new ArrayList<>();
 
