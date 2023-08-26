@@ -30,7 +30,6 @@ public class Game {
         Player currentMovePlayer = players.get(nextPlayerIndex);
 
         //2. Player should decide the move.
-
         Move move = currentMovePlayer.decideMove(this.getBoard());
 
         //3. Validate the move. TODO
@@ -171,3 +170,11 @@ public class Game {
         }
     }
 }
+
+// Assignment :-
+
+/*
+1. Validate the move. - 5 min
+2. Undo
+3. DRAW.
+ */

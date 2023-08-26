@@ -38,8 +38,10 @@ public class Player {
     }
 
     Move decideMove(Board board) {
+        System.out.println(this.getName() + " is deciding the move");
         //Get the input from the user, where to make the move.
         Scanner scanner = new Scanner(System.in);
+
 
         System.out.println(this.getName() + "'s turn, " + "Please give the row to make the move: ");
         int row = scanner.nextInt();
